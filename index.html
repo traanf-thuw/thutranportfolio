@@ -1,565 +1,304 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Caveat"
-      rel="stylesheet"
-    />
-    <title>OUI</title>
-    <link rel="icon" href="img/main-logo.png">
-  </head>
-  <body class="bg-yellow">
-    <!-- THE LOAD ANIMATION -->
-    <div id="effect-wrapper">
-      <div id="color-1"></div>
-      <div id="color-2"></div>
-      <div id="color-3"></div>
-      <div id="color-4"></div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thu Tran Portfolio</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+        <span>By Nguyen Anh Thu Tran</span>
+        <span>Digital Portfolio</span>
+        <span>IT Student</span>
+    </header>
+    <div class="content">
+        <div class="text-container">
+            <div class="sub-title">Creative</div>
+            <div class="title">PORTFOLIO</div>
+        </div>
     </div>
-    <!-- THE MAIN CONTENT -->
-    <div id="main-content">
-      <ul class="circles">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-      <header class="bg-yellow grid-header mb-3">
-        <a href="#">
-          <img src="img/main-logo.png" alt="OUI" class="logo-image" />
-        </a>
-        <div class="header-menu">
-          <div class="dropdown-menu">
-            <button
-              class="header-text font-circular-bold dropbtn-menu text-settings"
-            >
-              Menu
-            </button>
-            <div class="dropdown-menu-content">
-              <a href="#coffee-link">Coffee<img src="img/illustrations_yellow_coffee.svg" alt="yellow-coffee-illustrations" id="illustrations-coffee"></a>
-              <a href="#pain-link">Pain<img src="img/illustrations_yellow_croissant.svg" alt="yellow-pain-illustrations" id="illustrations-pain"></a>
-              <a href="#sweets-link">Sweets<img src="img/illustrations_yellow_merengue.svg" alt="yellow-sweets-illustrations" id="illustrations-sweets"></a>
-              <a href="#tea-link">Tea<img src="img/illustrations_yellow_tea.svg" alt="yellow-tea-illustrations" id="illustrations-tea"></a>
-            </div>
-          </div>
-          <a
-            href="#about-us-link"
-            class="header-text font-circular-bold text-settings"
-          >
-            About Us</a
-          >
-          <a
-            href="#map-link"
-            class="header-text font-circular-bold dropdown text-settings"
-          >
-            Location</a
-          >
-        </div>
-      </header>
-      <main class="main-grid">
-        <!--About us part 1-->
-        <div class="main-subgrid pl-5">
-          <h1>A coffee shop with a French twist!</h1>
-          <p class="font-circular text-settings">
-            Since the beginning, our goal has been to serve and uplift society by enriching human connections and social togetherness.
-          </p>
-        </div>
-        <div class="main-image">
-          <img
-            src="img/coffee_cup_about_us.png"
-            alt="food"
-            class="main-grid-image"
-          />
-        </div>
-        <!--PRODUCTS-->
-        <div class="products">
-          <div class="products-header">
-            <div class="products-header-text">
-              <h3>Categories</h3>
-              <h1>Our Products</h1>
-            </div>
-            <img
-              src="img/illustrations_red_coffee.svg"
-              alt="red coffee cup"
-              class="products-header-img"
-            />
-          </div>
-          <div class="products-featured">
-            <div class="products-featured-item">
-              <p class="products-featured-top">Coffee</p>
-              <img
-                src="img/coffee (1).jpg"
-                alt="coffee"
-                class="products-featured-img"
-              />
-              <div class="featured-bottom">
-                <p>Cappuccino</p>
-                <div class="pricing">
-                  <div>
-                    <s>€ 2,00</s>
-                    <p>€ 1,30</p>
+    
+    <nav>
+        <h1 id="last-name">Tran Nguyen</h1>
+        <h1 id="first-name">Anh Thu</h1>
+        <h2 id="job-desc">Back-end Developer</h2>
+        <p>I am Anh Thu, a second-year IT student at NHL Stenden University of Applied Science. 
+          I specialise in Java development, driven by a strong
+          passion for back-end development and cyber security. As being eager to conquer new challenges, I
+          continuously seek for opportunities to expand my skills. I am thrilled to contribute to the team’s success.
+        </p>
+    </nav>
+
+    <div class="carousel">
+      <h1 id="projects">PROJECTS</h1>
+      <div class="list">
+          <div class="item">
+              <img src="./img/web-dev.png">
+              <div class="introduce">
+                  <div class="title">Front-end Development</div>
+                  <div class="topic">OUI Cafeteria</div>
+                  <div class="des">
+                    Design the web interface, develop a website for the cafeteria
+                    chain named OUI in Emmen. Analyse the business needs for
+                    this project.
                   </div>
-                  <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
-                </div>
+                  <button class="seeMore">SEE MORE &#8599</button>
               </div>
-            </div>
-            <div class="products-featured-item">
-              <p class="products-featured-top">Coffee</p>
-              <img
-                src="img/coffee (2).jpg"
-                alt="coffee"
-                class="products-featured-img"
-              />
-              <div class="featured-bottom">
-                <p>Latte</p>
-                <div class="pricing">
-                  <div>
-                    <s>€ 3,00</s>
-                    <p>€ 2,30</p>
+              <div class="detail">
+                  <div class="title">OUI Cafeteria - WEB DEVELOPMENT
+                    & UI/UX DESIGN PROJECT</div>
+                  <div class="des">
+                      <!-- lorem 50 -->
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, reiciendis suscipit nobis nulla animi, modi explicabo quod corrupti impedit illo, accusantium in eaque nam quia adipisci aut distinctio porro eligendi. Reprehenderit nostrum consequuntur ea! Accusamus architecto dolores modi ducimus facilis quas voluptatibus! Tempora ratione accusantium magnam nulla tenetur autem beatae.
                   </div>
-                  <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
-                </div>
               </div>
-            </div>
-            <div class="products-featured-item">
-              <p class="products-featured-top">Coffee</p>
-              <img
-                src="img/coffee (3).jpg"
-                alt="coffee"
-                class="products-featured-img"
-              />
-              <div class="featured-bottom">
-                <p>Mocha</p>
-                <div class="pricing">
-                  <div>
-                    <s>€ 3,00</s>
-                    <p>€ 2,80</p>
+          </div>
+
+          <div class="item">
+              <img src="./img/db-manage.png">
+              <div class="introduce">
+                  <div class="title">DESIGN SLIDER</div>
+                  <div class="topic">Aerphone</div>
+                  <div class="des">
+                      <!-- 20 lorem -->
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
                   </div>
-                  <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
-                </div>
+                  <button class="seeMore">SEE MORE &#8599</button>
               </div>
-            </div>
-            <div class="products-featured-item">
-              <p class="products-featured-top">Coffee</p>
-              <img
-                src="img/coffee (4).jpg"
-                alt="coffee"
-                class="products-featured-img"
-              />
-              <div class="featured-bottom">
-                <p>Espresso</p>
-                <div class="pricing">
-                  <div>
-                    <s>€ 3,30</s>
-                    <p>€ 3,00</p>
+              <div class="detail">
+                  <div class="title">Aerphone GHTK</div>
+                  <div class="des">
+                      <!-- lorem 50 -->
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, reiciendis suscipit nobis nulla animi, modi explicabo quod corrupti impedit illo, accusantium in eaque nam quia adipisci aut distinctio porro eligendi. Reprehenderit nostrum consequuntur ea! Accusamus architecto dolores modi ducimus facilis quas voluptatibus! Tempora ratione accusantium magnam nulla tenetur autem beatae.
                   </div>
-                  <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
-                </div>
-              </div>
-            </div>
-            <div class="products-featured-item">
-              <p class="products-featured-top">Croissant</p>
-              <img
-                src="img/Croissant (2).jpg"
-                alt="coffee"
-                class="products-featured-img"
-              />
-              <div class="featured-bottom">
-                <p>Croissant (jam)</p>
-                <div class="pricing">
-                  <div>
-                    <s>€ 4,00</s>
-                    <p>€ 3,30</p>
+                  <div class="specifications">
+                      <div>
+                          <p>Used Time</p>
+                          <p>6 hours</p>
+                      </div>
+                      <div>
+                          <p>Charging port</p>
+                          <p>Type-C</p>
+                      </div>
+                      <div>
+                          <p>Compatible</p>
+                          <p>Android</p>
+                      </div>
+                      <div>
+                          <p>Bluetooth</p>
+                          <p>5.3</p>
+                      </div>
+                      <div>
+                          <p>Controlled</p>
+                          <p>Touch</p>
+                      </div>
                   </div>
-                  <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
-                </div>
-              </div>
-            </div>
-            <div class="products-featured-item">
-              <p class="products-featured-top">Croissant</p>
-              <img
-                src="img/Croissant (1).jpg"
-                alt="coffee"
-                class="products-featured-img"
-              />
-              <div class="featured-bottom">
-                <p>Croissant</p>
-                <div class="pricing">
-                  <div>
-                    <s>€ 2,00</s>
-                    <p>€ 1,30</p>
+                  <div class="checkout">
+                      <button>ADD TO CART</button>
+                      <button>CHECKOUT</button>
                   </div>
-                  <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
-                </div>
               </div>
-            </div>
-            <div class="products-featured-item">
-              <p class="products-featured-top">Merengue</p>
-              <img
-                src="img/macaron (1).jpg"
-                alt="coffee"
-                class="products-featured-img"
-              />
-              <div class="featured-bottom">
-                <p>Macaron (blueberry)</p>
-                <div class="pricing">
-                  <div>
-                    <s>€ 4,00</s>
-                    <p>€ 3,00</p>
+          </div>
+
+          <div class="item">
+              <img src="./img/robotic.jpg">
+              <div class="introduce">
+                  <div class="title">DESIGN SLIDER</div>
+                  <div class="topic">Aerphone</div>
+                  <div class="des">
+                      <!-- 20 lorem -->
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
                   </div>
-                  <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
-                </div>
+                  <button class="seeMore">SEE MORE &#8599</button>
               </div>
-            </div>
-            <div class="products-featured-item">
-              <p class="products-featured-top">Merengue</p>
-              <img
-                src="img/macaron (2).jpg"
-                alt="coffee"
-                class="products-featured-img"
-              />
-              <div class="featured-bottom">
-                <p>Macaron (lemon curd)</p>
-                <div class="pricing">
-                  <div>
-                    <s>€ 4,00</s>
-                    <p>€ 3,00</p>
+              <div class="detail">
+                  <div class="title">Aerphone GHTK</div>
+                  <div class="des">
+                      <!-- lorem 50 -->
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, reiciendis suscipit nobis nulla animi, modi explicabo quod corrupti impedit illo, accusantium in eaque nam quia adipisci aut distinctio porro eligendi. Reprehenderit nostrum consequuntur ea! Accusamus architecto dolores modi ducimus facilis quas voluptatibus! Tempora ratione accusantium magnam nulla tenetur autem beatae.
                   </div>
-                  <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="offer">
-          <div class="offer-header">
-            <div class="offer-header-text">
-              <h3>Offer</h3>
-              <h1>Our Signature Beverages</h1>
-            </div>
-            <a class="offer-header-button" href="#coffee-link"
-              >View All Products</a
-            >
-          </div>
-          <div class="offer-items">
-            <div class="products-featured-item">
-              <p class="products-featured-top">Tea</p>
-              <img
-                src="img/tea (3).jpg"
-                alt="coffee"
-                class="products-featured-img"
-              />
-              <div class="featured-bottom">
-                <p>Black tea</p>
-                <div class="pricing">
-                  <div>
-                    <s>€ 5,00</s>
-                    <p>€ 4,80</p>
+                  <div class="specifications">
+                      <div>
+                          <p>Used Time</p>
+                          <p>6 hours</p>
+                      </div>
+                      <div>
+                          <p>Charging port</p>
+                          <p>Type-C</p>
+                      </div>
+                      <div>
+                          <p>Compatible</p>
+                          <p>Android</p>
+                      </div>
+                      <div>
+                          <p>Bluetooth</p>
+                          <p>5.3</p>
+                      </div>
+                      <div>
+                          <p>Controlled</p>
+                          <p>Touch</p>
+                      </div>
                   </div>
-                  <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
-                </div>
-              </div>
-            </div>
-            <div class="products-featured-item">
-              <p class="products-featured-top">Cold drinks</p>
-              <img
-                src="img/tea (1).jpg"
-                alt="coffee"
-                class="products-featured-img"
-              />
-              <div class="featured-bottom">
-                <p>Ice tea</p>
-                <div class="pricing">
-                  <div>
-                    <s>€ 4,00</s>
-                    <p>€ 3,30</p>
+                  <div class="checkout">
+                      <button>ADD TO CART</button>
+                      <button>CHECKOUT</button>
                   </div>
-                  <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
-                </div>
               </div>
-            </div>
-            <div class="products-featured-item">
-              <p class="products-featured-top">Coffee</p>
-              <img
-                src="img/coffee (4).jpg"
-                alt="coffee"
-                class="products-featured-img"
-              />
-              <div class="featured-bottom">
-                <p>Americano</p>
-                <div class="pricing">
-                  <div>
-                    <s>€ 5,00</s>
-                    <p>€ 4,30</p>
+          </div>
+
+          <div class="item">
+              <img src="./img/lock.png">
+              <div class="introduce">
+                  <div class="title">DESIGN SLIDER</div>
+                  <div class="topic">Aerphone</div>
+                  <div class="des">
+                      <!-- 20 lorem -->
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
                   </div>
-                  <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
-                </div>
+                  <button class="seeMore">SEE MORE &#8599</button>
               </div>
-            </div>
-            <div class="products-featured-item">
-              <p class="products-featured-top">Tea</p>
-              <img
-                src="img/tea (2).jpg"
-                alt="coffee"
-                class="products-featured-img"
-              />
-              <div class="featured-bottom">
-                <p>Rooibos</p>
-                <div class="pricing">
-                  <div>
-                    <s>€ 2,00</s>
-                    <p>€ 1,30</p>
+              <div class="detail">
+                  <div class="title">Aerphone GHTK</div>
+                  <div class="des">
+                      <!-- lorem 50 -->
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, reiciendis suscipit nobis nulla animi, modi explicabo quod corrupti impedit illo, accusantium in eaque nam quia adipisci aut distinctio porro eligendi. Reprehenderit nostrum consequuntur ea! Accusamus architecto dolores modi ducimus facilis quas voluptatibus! Tempora ratione accusantium magnam nulla tenetur autem beatae.
                   </div>
-                  <p>&#11088;&#11088;&#11088;&#11088;&#11088;</p>
-                </div>
+                  <div class="specifications">
+                      <div>
+                          <p>Used Time</p>
+                          <p>6 hours</p>
+                      </div>
+                      <div>
+                          <p>Charging port</p>
+                          <p>Type-C</p>
+                      </div>
+                      <div>
+                          <p>Compatible</p>
+                          <p>Android</p>
+                      </div>
+                      <div>
+                          <p>Bluetooth</p>
+                          <p>5.3</p>
+                      </div>
+                      <div>
+                          <p>Controlled</p>
+                          <p>Touch</p>
+                      </div>
+                  </div>
+                  <div class="checkout">
+                      <button>ADD TO CART</button>
+                      <button>CHECKOUT</button>
+                  </div>
               </div>
-            </div>
           </div>
-          <div class="Yellow-bg">
-            <img src="img/yellow-bg.png" alt="Yellow background" id="Yellow">
-          </div>
-        </div>
-        <!--Menu-->
-        <div class="menu">
-          <div class="menu-coffee">
-            <div class="menu-coffee-header mb-3 size-to-fill">
-              <div class="subhdr">
-                <h2>Coffee</h2>
-                <p id="coffee-link">
-                  As a Dutch brand, OUI hand selects and roasts only the finest
-                  aromatic Arabica and bold Robusta beans for our signature
-                  blends.
-                </p>
+
+          <div class="item">
+              <img src="./img/ellan-web.png">
+              <div class="introduce">
+                  <div class="title">DESIGN SLIDER</div>
+                  <div class="topic">Aerphone</div>
+                  <div class="des">
+                      <!-- 20 lorem -->
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
+                  </div>
+                  <button class="seeMore">SEE MORE &#8599</button>
               </div>
-              <img src="img/Cappuccino_Coffee_cup.png" alt="coffee-cup" />
-            </div>
-            <div class="menu-subheader mb-3">
-              <h3 class="text-settings-header">Drinks</h3>
-              <h1>Coffee & Cold Drinks</h1>
-            </div>
-            <div class="menu-main-content mb-3">
-              <ul class="menu-items">
-                <li class="text-settings">Cappuccino</li>
-                <li class="text-settings">Latte</li>
-                <li class="text-settings">Mocha</li>
-                <li class="text-settings">Espresso</li>
-                <li class="text-settings">Americano</li>
-                <li class="text-settings">Flat white</li>
-                <li class="text-settings">Home-made lemonade</li>
-                <li class="text-settings">Jus d'orange</li>
-                <li class="text-settings">Apple juice</li>
-                <li class="text-settings">Ice tea</li>
-                <li class="text-settings">Flat water</li>
-                <li class="text-settings">Sparkling water</li>
-              </ul>
-              <ul class="menu-prices">
-                <li class="text-settings">€ 1,30</li>
-                <li class="text-settings">€ 2,30</li>
-                <li class="text-settings">€ 2,80</li>
-                <li class="text-settings">€ 3,30</li>
-                <li class="text-settings">€ 4,50</li>
-                <li class="text-settings">€ 4,70</li>
-                <li class="text-settings">€ 1,30</li>
-                <li class="text-settings">€ 2,30</li>
-                <li class="text-settings">€ 2,80</li>
-                <li class="text-settings">€ 3,30</li>
-                <li class="text-settings">€ 4,50</li>
-                <li class="text-settings">€ 4,70</li>
-              </ul>
-            </div>
-          </div>
-          <div class="menu-pain">
-            <div class="menu-pain-header mb-3 size-to-fill">
-              <div class="header-pain">
-                <h2>Pain</h2>
-                <p id="pain-link">
-                  Our high-quality OUI croissant. Experience unparalleled pastry
-                  excellence with our high-quality croissant, where buttery
-                  layer of perfection await in every bite.
-                </p>
+              <div class="detail">
+                  <div class="title">Aerphone GHTK</div>
+                  <div class="des">
+                      <!-- lorem 50 -->
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, reiciendis suscipit nobis nulla animi, modi explicabo quod corrupti impedit illo, accusantium in eaque nam quia adipisci aut distinctio porro eligendi. Reprehenderit nostrum consequuntur ea! Accusamus architecto dolores modi ducimus facilis quas voluptatibus! Tempora ratione accusantium magnam nulla tenetur autem beatae.
+                  </div>
+                  <div class="specifications">
+                      <div>
+                          <p>Used Time</p>
+                          <p>6 hours</p>
+                      </div>
+                      <div>
+                          <p>Charging port</p>
+                          <p>Type-C</p>
+                      </div>
+                      <div>
+                          <p>Compatible</p>
+                          <p>Android</p>
+                      </div>
+                      <div>
+                          <p>Bluetooth</p>
+                          <p>5.3</p>
+                      </div>
+                      <div>
+                          <p>Controlled</p>
+                          <p>Touch</p>
+                      </div>
+                  </div>
+                  <div class="checkout">
+                      <button>ADD TO CART</button>
+                      <button>CHECKOUT</button>
+                  </div>
               </div>
-              <img src="img/croissant.png" alt="croissant" />
-            </div>
-            <div class="menu-subheader mb-3">
-              <h3 class="text-settings-header">Food</h3>
-              <h1>Croissant or Petit Pain</h1>
-            </div>
-            <div class="menu-main-content mb-3">
-              <ul class="menu-items">
-                <li class="text-settings">Natural/Plain</li>
-                <li class="text-settings">Butter</li>
-                <li class="text-settings">Herb butter</li>
-                <li class="text-settings">Jam or Nutella</li>
-                <li class="text-settings">Brie or camembert</li>
-                <li class="text-settings">Cheese with walnuts</li>
-                <li class="text-settings">Cream cheese</li>
-                <li class="text-settings">Soft goat cheese</li>
-                <li class="text-settings">Smoked salmon</li>
-                <li class="text-settings">Tuna salad</li>
-                <li class="text-settings">Egg salad</li>
-                <li class="text-settings">Hummus</li>
-                <li class="text-settings">Frech ragout</li>
-              </ul>
-              <ul class="menu-prices">
-                <li class="text-settings">€ 1,30</li>
-                <li class="text-settings">€ 2,30</li>
-                <li class="text-settings">€ 2,80</li>
-                <li class="text-settings">€ 3,30</li>
-                <li class="text-settings">€ 4,50</li>
-                <li class="text-settings">€ 4,70</li>
-                <li class="text-settings">€ 4,80</li>
-                <li class="text-settings">€ 4,80</li>
-                <li class="text-settings">€ 5,80</li>
-                <li class="text-settings">€ 4,80</li>
-                <li class="text-settings">€ 4,80</li>
-                <li class="text-settings">€ 4,60</li>
-                <li class="text-settings">€ 4,70</li>
-              </ul>
-            </div>
           </div>
-          <div class="menu-sweets">
-            <div class="menu-sweets-header mb-3 size-to-fill">
-              <div class="subhdr">
-                <h2>Sweets</h2>
-                <p id="sweets-link">
-                  Enjoy the greatest confections, each delectable OUI sweets a
-                  monument to unwavering quality and outstanding flavor.
-                </p>
+
+          <div class="item">
+              <img src="./img/api.png">
+              <div class="introduce">
+                  <div class="title">DESIGN SLIDER</div>
+                  <div class="topic">Aerphone</div>
+                  <div class="des">
+                      <!-- 20 lorem -->
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
+                  </div>
+                  <button class="seeMore">SEE MORE &#8599</button>
               </div>
-              <img src="img/macaron.png" alt="macaron" />
-            </div>
-            <div class="menu-subheader mb-3">
-              <h3 class="text-settings-header">Food</h3>
-              <h1>Sweets</h1>
-            </div>
-            <div class="menu-main-content mb-3">
-              <ul class="menu-items">
-                <li class="text-settings">Macaron (3 pieces)</li>
-                <li class="subcategory">Vanilla</li>
-                <li class="subcategory">Lemon Curd</li>
-                <li class="subcategory">Cookies and Cream</li>
-                <li class="subcategory">Blueberry</li>
-                <li class="subcategory">Chocolate</li>
-                <li class="subcategory">Mocha/Coffee</li>
-                <li class="text-settings">Paris-Brest</li>
-                <li class="text-settings">Cream Puffs</li>
-                <li class="text-settings">Eclair</li>
-                <li class="text-settings">Millefeuille</li>
-              </ul>
-              <ul class="menu-prices">
-                <li class="text-settings">€ 6,00</li>
-                <li class="subcategory">‎</li>
-                <li class="subcategory">‎</li>
-                <li class="subcategory">‎</li>
-                <li class="subcategory">‎</li>
-                <li class="subcategory">‎</li>
-                <li class="subcategory">‎</li>
-                <li class="text-settings">€ 4,70</li>
-                <li class="text-settings">€ 4,70</li>
-                <li class="text-settings">€ 3,90</li>
-                <li class="text-settings">€ 3,90</li>
-              </ul>
-            </div>
-          </div>
-          <div class="menu tea">
-            <div class="menu-tea-header mb-3 size-to-fill">
-              <div class="header-pain">
-                <h2>Tea</h2>
-                <p id="tea-link">
-                  Savor the epitome of OUI tea craftsmanship with our
-                  high-quality blends, where each sip is a journey into the
-                  world of unparalleled flavor and refinement.
-                </p>
+              <div class="detail">
+                  <div class="title">Aerphone GHTK</div>
+                  <div class="des">
+                      <!-- lorem 50 -->
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, reiciendis suscipit nobis nulla animi, modi explicabo quod corrupti impedit illo, accusantium in eaque nam quia adipisci aut distinctio porro eligendi. Reprehenderit nostrum consequuntur ea! Accusamus architecto dolores modi ducimus facilis quas voluptatibus! Tempora ratione accusantium magnam nulla tenetur autem beatae.
+                  </div>
+                  <div class="specifications">
+                      <div>
+                          <p>Used Time</p>
+                          <p>6 hours</p>
+                      </div>
+                      <div>
+                          <p>Charging port</p>
+                          <p>Type-C</p>
+                      </div>
+                      <div>
+                          <p>Compatible</p>
+                          <p>Android</p>
+                      </div>
+                      <div>
+                          <p>Bluetooth</p>
+                          <p>5.3</p>
+                      </div>
+                      <div>
+                          <p>Controlled</p>
+                          <p>Touch</p>
+                      </div>
+                  </div>
+                  <div class="checkout">
+                      <button>ADD TO CART</button>
+                      <button>CHECKOUT</button>
+                  </div>
               </div>
-              <img src="img/tea.png" alt="tea" />
-            </div>
-            <div class="menu-subheader mb-3">
-              <h3 class="text-settings-header">Drinks</h3>
-              <h1>Tea</h1>
-            </div>
-            <div class="menu-main-content mb-3">
-              <ul class="menu-items">
-                <li class="text-settings">Tea</li>
-                <li class="subcategory">Black Tea</li>
-                <li class="subcategory">Green Tea</li>
-                <li class="subcategory">Herbal Tea</li>
-                <li class="subcategory">Jasmine Tea</li>
-                <li class="subcategory">Rooibos</li>
-              </ul>
-              <ul class="menu-prices">
-                <li class="text-settings">€ 4,80</li>
-                <li class="subcategory">‎</li>
-                <li id="about-us-link" class="subcategory">‎</li>
-                <li class="subcategory">‎</li>
-                <li class="subcategory">‎</li>
-                <li class="subcategory">‎</li>
-              </ul>
-            </div>
           </div>
-        </div>
-        <!--About us part two-->
-        <div id="about-us2">
-          <div id="img">
-            <img
-              id="about_us_img"
-              src="img/cappuccino-about-us-img.jpg"
-              alt="cappuccino"
-            />
-          </div>
-          <div id="about-us-font">
-            <h2>What is the story behind OUI?</h2>
-            <p>
-              In 2023, Marcel Baron, founded the café OUI with a lifelong
-              journey of bringing fine coffee flavours and desserts designated
-              for all ages.<br />
-              He set the mission of “bringing high-quality and affordable
-              products to everyone around the world”. Took a long time through
-              thick and thin, to begin the production of our core ingredients
-              independently.
-            </p>
-          </div>
-        </div>
-      </main>
-      <!--LOCATION-->
-      <div class="location" id="map-link">
-        <div class="location-text"><strong>Find a store</strong></div>
-        <div class="mapouter">
-          <div class="gmap_canvas">
-            <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Raadhuisplein,%207811%20AP%20Emmen&t=&z=13&ie=UTF8&iwloc=&output=embed">
-            </iframe>
-            </div></div>      
-          </div>
-      <footer class="font-circular">
-        <div class="footer-left">
-          <p>Contact us</p>
-          <p>marcel.baron@nhlstenden.com</p>
-          <p>+31 (0) 6-82588713</p>
-        </div>
-        <div class="footer-right">
-          <p>Opening times:</p>
-          <p>Tue 10:00 to 21:00</p>
-          <p>Wed 10:00 to 21:00</p> 
-          <p>Thu 10:00 to 21:00</p> 
-          <p>Fri 10:00 to 21:00</p> 
-          <p>Sat 15:00 to 22:00</p> 
-          <p>Sun 15:00 to 22:00</p>
-          </p>
-        </div>
-      </footer>
-    </div>
-    <script src="js/script.js" defer></script>
-  </body>
+      </div>
+      <div class="arrows">
+          <button id="prev"><</button>
+          <button id="next">></button>
+          <button id="back">See All  &#8599</button>
+      </div>
+  </div>
+    <div class="footer">
+      <div class="description">This page is hosted by GitHub, due to financial burden, I am unable to obtain a domain officially</div>
+      <div class="page-number">01</div>
+  </div>
+</div>
+</div>
+
+<script src="./js/script.js"></script>
+</body>
 </html>
