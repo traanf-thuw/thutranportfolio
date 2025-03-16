@@ -95,21 +95,25 @@ header {
 	justify-content: center;
 	position: relative;
 }
-.sub-title {
+.text-container #sub-title {
 	font-size: 521px;
 	font-family: 'Buongiorno Rastellino', cursive;
 	transform: rotate(8deg);
 	position: absolute;
 	top: -150px;
 }
-.title {
+.text-container #title {
 	font-size: 300px;
 	font-weight: bold;
 	color: #ff77a9;
 	font-family: Impact;
     margin-top: 50px;
 }
-.sapo {
+.autoBLur{
+    transition: filter 0.3s ease-in-out;
+}
+
+.text-container #sapo {
     font-size: 40px;
 	/* font-weight: bold; */
 	color: black;
@@ -131,6 +135,20 @@ figure {
     }
     to{
         transform: rotate(360deg);
+    }
+}
+.autoShow{
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 5%);
+
+}
+@keyframes autoShowAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
     }
 }
 .description {
@@ -264,14 +282,19 @@ nav p {
     font-size: 2em;
     font-weight: 500;
     line-height: 1em;
+    font-family: Impact;
+    color: #ff77a9;
 }
 .carousel .list .item .introduce .topic{
     font-size: 4em;
     font-weight: 500;
+    font-family: Impact;
 }
 .carousel .list .item .introduce .des{
     font-size: small;
     color: #5559;
+    font-family: TT Fors;
+    padding-right: 10px;
 }
 .carousel .list .item .introduce .seeMore{
     font-family: Poppins;
@@ -283,6 +306,7 @@ nav p {
     font-weight: bold;
     letter-spacing: 3px;
     transition: background 0.5s;
+    font-family: TT Fors;
 }
 .carousel .list .item .introduce .seeMore:hover{
     background: #eee;
@@ -433,6 +457,15 @@ nav p {
 }
 .carousel.showDetail .list .item:nth-child(2) .detail .title{
     font-size: 4em;
+    font-family: Impact;
+    color: black;
+}
+.carousel.showDetail .list .item:nth-child(2) .detail .des{
+    font-size: small;
+    font-family: TT Fors;
+    color: #555;
+    text-align: justify;
+    padding-left: 20px;
 }
 /* .carousel.showDetail .list .item:nth-child(2) .detail .specifications{
     display: flex;
@@ -532,7 +565,7 @@ nav p {
     width: 500px;
     height: 300px;
     content: '';
-    background-image: linear-gradient(70deg, #DC422A, blue);
+    background-image: linear-gradient(90deg, #DC422A, blue);
     position: absolute;
     z-index: -1;
     border-radius: 20% 30% 80% 10%;

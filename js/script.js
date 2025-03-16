@@ -40,3 +40,19 @@ seeMoreButtons.forEach((button) => {
 backButton.onclick = function(){
     carousel.classList.remove('showDetail');
 }
+
+// Get the elements to apply the blur effect
+const subTitle = document.getElementById("sub-title");
+const title = document.getElementById("title");
+const sapo = document.getElementById("sapo")
+
+window.addEventListener("scroll", function () {
+    const scrollPosition = window.scrollY; 
+
+    const blurAmount = Math.min(scrollPosition / 5, 15); 
+
+    // Apply the blur effect to the elements
+    subTitle.style.filter = `blur(${blurAmount}px)`;
+    title.style.filter = `blur(${blurAmount}px)`;
+    sapo.style.filter = `blur(${blurAmount}px)`;
+});
