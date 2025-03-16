@@ -56,3 +56,23 @@ window.addEventListener("scroll", function () {
     title.style.filter = `blur(${blurAmount}px)`;
     sapo.style.filter = `blur(${blurAmount}px)`;
 });
+
+// Text for typewriter effect
+const text = "PORTFOLIO";
+let index = 0;
+
+// Typewriter effect function
+function typeWriter() {
+    if (index < text.length) {
+        title.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeWriter, 150); // Typing speed (milliseconds)
+    } else {
+        title.classList.add("hideCursor"); // Remove cursor after typing is done
+    }
+}
+
+// Start typewriter effect when page loads
+window.onload = function () {
+    setTimeout(typeWriter, 500); // Delay before typing starts
+};

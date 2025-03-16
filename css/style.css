@@ -101,6 +101,16 @@ header {
 	transform: rotate(8deg);
 	position: absolute;
 	top: -150px;
+    z-index: 100;
+}
+.text-container #sub-title span {
+    display: inline-block;
+    transition: transform 0.2s ease-out;
+}
+
+/* Shrink letter when hovered */
+#sub-title span:hover {
+    transform: scale(0.8);
 }
 .text-container #title {
 	font-size: 300px;
@@ -109,20 +119,53 @@ header {
 	font-family: Impact;
     margin-top: 50px;
 }
+
+#title::after {
+    content: "";
+    display: inline-block;
+    animation: blinkCursor 0.8s infinite;
+}
+
+/* Blinking cursor effect */
+@keyframes blinkCursor {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Hide cursor after typing completes */
+.hideCursor::after {
+    content: "";
+    animation: none; /* Stop blinking animation */
+}
 .autoBLur{
     transition: filter 0.3s ease-in-out;
 }
-
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px); /* Start 50px lower */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 .text-container #sapo {
     font-size: 40px;
 	/* font-weight: bold; */
 	color: black;
 	font-family: TT Fors;
+    opacity: 0; /* Initially hidden */
+    animation: fadeUp 1s ease-out forwards;
 }
 figure {
     width: 150px;  /* Adjust the width */
     height: auto;  /* Maintain aspect ratio */
     margin: 0 auto; /* Center the figure */
+    opacity: 0; /* Initially hidden */
+    animation: fadeUp 1s ease-out forwards;
+    animation-delay: 0.5s;
 }
 .autoRotate{
     width: 100%; 
