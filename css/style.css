@@ -34,12 +34,49 @@ body {
 	position: relative;
 }
 header {
-	display: flex;
-	justify-content: space-between;
-	font-size: 14px;
-	padding: 10px;
-	grid-column: 1/-1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    grid-column: 2/span 14;
+    font-family: "TT Fors";
+    
 }
+
+.logo {
+    width: 100px; /* Adjust size */
+    height: auto;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-links a img {
+    width: 30px;
+    height: 30px;
+}
+
+.email-button {
+    padding: 8px 12px;
+    background-color: #ff77a9;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.email-button:hover {
+    background-color: #ffc1c1;
+}
+
 .content {
 	display: grid;
 	/* grid-template-columns: 1fr 1fr; */
@@ -63,13 +100,38 @@ header {
 	font-family: 'Buongiorno Rastellino', cursive;
 	transform: rotate(8deg);
 	position: absolute;
-	/* top: -50px; */
+	top: -150px;
 }
 .title {
-	font-size: 327px;
+	font-size: 300px;
 	font-weight: bold;
 	color: #ff77a9;
 	font-family: Impact;
+    margin-top: 50px;
+}
+.sapo {
+    font-size: 40px;
+	/* font-weight: bold; */
+	color: black;
+	font-family: TT Fors;
+}
+figure {
+    width: 150px;  /* Adjust the width */
+    height: auto;  /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the figure */
+}
+.autoRotate{
+    width: 100%; 
+    animation: autoRotateAnimation;
+    animation-timeline: view();
+}
+@keyframes autoRotateAnimation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
 .description {
 	font-size: 14px;
@@ -100,6 +162,7 @@ nav p {
 }
 
 .carousel #projects {
+    margin-top: 120px;
     font-family: Impact, sans-serif;
 	display: flex; /* Use flexbox */
     justify-content: center; /* Center horizontally */
@@ -149,7 +212,6 @@ nav p {
     position: relative;
     height: 800px;
     overflow: hidden;
-    /* margin-top: -50px; */
 	grid-column: 1/-1;
 }
 .carousel .list{
@@ -159,6 +221,7 @@ nav p {
     height: 80%;
     left: 50%;
     transform: translateX(-50%);
+    margin-top: -100px;
 }
 .carousel .list .item{
     position: absolute;
@@ -435,6 +498,7 @@ nav p {
     font-size: large;
     bottom: 20%;
     left: 10%;
+    margin-top: -100px;
 }
 #next{
     left: unset;
@@ -443,7 +507,7 @@ nav p {
 #back{
     position: absolute;
     z-index: 100;
-    bottom: 0%;
+    bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
     border: none;
@@ -452,8 +516,8 @@ nav p {
     font-weight: bold;
     letter-spacing: 3px;
     background-color: transparent;
-    padding: 10px;
-    /* opacity: 0; */
+    /* padding: 10px; */
+    opacity: 0;
     transition: opacity 0.5s;
 }
 .carousel.showDetail #back{
