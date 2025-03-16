@@ -47,10 +47,21 @@ header {
     width: 100px; /* Adjust size */
     height: auto;
 }
+header a {
+    text-decoration: none; /* Ensures no underline on the entire link */
+    color: inherit; /* Keeps text color unchanged */
+}
+header a #cv {
+    display: none;
+    font-size: 30px;
+    font-family: TT Fors;
+    text-decoration: none;
+    color: inherit; /* Prevents color change on hover */
+    pointer-events: none;
+}
 
-.header-info {
+header a .logo:hover + #cv {
     display: flex;
-    flex-direction: column;
 }
 
 .header-links {
