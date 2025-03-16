@@ -3,6 +3,29 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+/* Entire scrollbar */
+::-webkit-scrollbar {
+    width: 10px; /* Adjust width */
+    height: 30px;
+}
+
+/* Track (background of scrollbar) */
+::-webkit-scrollbar-track {
+    background: white; /* Light gray */
+    border-radius: 5px;
+}
+
+/* Handle (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background: #ffc1c1; /* Dark gray */
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ff77a9;
+}
+
 @font-face {
 	font-family: "Buongiorno Rastellino";
 	src: url(./Buongiorno\ Rastellino.otf);
