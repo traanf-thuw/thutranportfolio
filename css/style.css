@@ -76,7 +76,7 @@ header a {
 }
 header a #cv {
     display: none;
-    font-size: 30px;
+    font-size: 20px;
     font-family: TT Fors;
     text-decoration: none;
     color: inherit; /* Prevents color change on hover */
@@ -85,6 +85,7 @@ header a #cv {
 
 header a .logo:hover + #cv {
     display: flex;
+    flex-direction: column;
 }
 
 .header-links {
@@ -232,12 +233,36 @@ figure {
 	font-size: 14px;
 	margin-top: 20px;
 }
-nav {
+.profile-des {
+    grid-column: 2 / span 12; /* Centers content in the container */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* Creates 12 equal columns within this section */
+    align-items: center;
+    gap: 20px; /* Adds spacing between nav and image */
+    width: 100%;
+}
+.profile-des nav {
 	grid-column: 2/ span 6;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	position: relative;
+}
+
+.profile-des nav {
+    grid-column: 1 / span 6; /* Nav takes up the first 6 columns */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+.profile-des .profile {
+    grid-column: 8 / span 5; /* Image starts at column 8 and spans 5 columns */
+    width: 100%; /* Makes sure image scales properly */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
 }
 nav #last-name, 
 nav #first-name {
@@ -255,7 +280,6 @@ nav p {
 	font-family: "TT Fors";
 	text-align: justify;
 }
-
 .carousel #projects {
     margin-top: 120px;
     font-family: Impact, sans-serif;
